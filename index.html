@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Micro-Learning Deck</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- TITLE -->
+  <header class="header">
+    <h1 class="title">📚 Micro-Learning Deck</h1>
+    <p class="subtitle">Build your deck before studying</p>
+  </header>
+
+  <!-- ADD CARD MODE -->
+  <section id="buildMode">
+
+    <div class="input-section">
+      <h2>Add Flashcards</h2>
+
+      <input id="termInput" placeholder="Enter term (e.g. gato)" />
+      <input id="definitionInput" placeholder="Enter meaning (e.g. cat)" />
+      <button onclick="addCard()">+ Add Card</button>
+
+      <!-- CARD COUNTER -->
+      <p class="counter">Cards Added: <span id="cardCount">0</span></p>
+    </div>
+
+    <button class="study-btn" onclick="startStudyMode()">🎯 Start Study Mode</button>
+
+  </section>
+
+  
+
+  <!-- STUDY MODE -->
+  <section id="studyMode" class="hidden">
+
+
+
+    <!-- FLASHCARD -->
+    <main class="card" onclick="flipCard()">
+      <h2 id="cardTerm">No Cards</h2>
+      <p id="cardDefinition" class="hidden"></p>
+      <small>Tap to reveal</small>
+    </main>
+
+
+
+    <!-- ACTIONS (ONLY HERE) -->
+    <div class="actions">
+      <button class="green" onclick="markLearned()">✔ Learned</button>
+      <button class="red" onclick="markUnknown()">❌ Still Learning</button>
+      <button class="blue" onclick="shuffleDeck()">🔀 Shuffle</button>
+    </div>
+
+
+
+    <!-- EXTRA OPTIONS -->
+    <div class="extra-actions">
+      <button onclick="backToBuild()">➕ Add Another Card</button>
+      <button onclick="resetDeck()">🆕 Make New Flashcards</button>
+    </div>
+
+
+
+    <!-- STATS -->
+    <footer class="stats">
+      <div>Total: <span id="totalCards">0</span></div>
+      <div>Mastered: <span id="masteredCards">0</span></div>
+      <div>Remaining: <span id="remainingCards">0</span></div>
+      <div id="progressText">0%</div>
+    </footer>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
