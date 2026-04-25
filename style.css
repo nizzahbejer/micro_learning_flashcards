@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+  /* soft gradient background (NOT white-heavy) */
+  background: linear-gradient(135deg, #C7D2FE, #FBCFE8, #BAE6FD);
+  color: #1F2937;
+}
+
+/* APP */
+.app {
+  max-width: 560px;
+  margin: auto;
+  padding: 25px;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  color: #312E81;
+}
+
+.subtitle {
+  text-align: center;
+  color: #4B5563;
+  margin-bottom: 20px;
+}
+
+/* INPUT SECTION (colored card instead of white) */
+.input-section {
+  background: linear-gradient(135deg, #FDE68A, #A7F3D0);
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  margin-bottom: 18px;
+}
+
+.input-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1E3A8A;
+}
+
+/* INPUT FIELDS */
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  background: #ffffffcc;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+/* STUDY BUTTON (purple pastel) */
+.study-btn {
+  background: #818CF8;
+  color: white;
+  margin-top: 10px;
+}
+
+.study-btn:hover {
+  background: #6366F1;
+}
+
+/* CARD (colorful pastel instead of white) */
+.card {
+  background: linear-gradient(135deg, #F9A8D4, #93C5FD);
+  padding: 50px 20px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  min-height: 180px;
+  margin-top: 20px;
+  color: #111827;
+}
+
+.card h2 {
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
+
+/* ACTIONS (each button is pastel colored) */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.actions button {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* pastel buttons */
+.green { background: #6EE7B7; }
+.red { background: #FCA5A5; }
+.blue { background: #93C5FD; }
+
+.green:hover { background: #34D399; }
+.red:hover { background: #EF4444; }
+.blue:hover { background: #3B82F6; }
+
+/* EXTRA BUTTONS */
+.extra-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.extra-actions button {
+  background: linear-gradient(135deg, #FDE68A, #FCA5A5);
+  color: #1F2937;
+}
+
+/* STATS (colored bar style instead of white) */
+.stats {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #A5B4FC, #F0ABFC);
+  padding: 15px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
