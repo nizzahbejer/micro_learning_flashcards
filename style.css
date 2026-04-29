@@ -64,25 +64,6 @@ body {
 
 
 
-
-.input-section h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #1E3A8A;
-}
-
-/* INPUT FIELDS */
-input {
-  width: 100%;
-  padding: 14px;
-  margin: 8px 0;
-  border-radius: 12px;
-  border: none;
-  font-size: 15px;
-  outline: none;
-  background: #ffffffcc;
-}
-
 /* BUTTONS */
 button {
   width: 100%;
