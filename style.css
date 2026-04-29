@@ -41,6 +41,25 @@ body {
 }
 
 
+/* INPUTS */
+
+.input {
+  width: 100%
+  padding: 18px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 17px;
+  background: #ffffffcc;
+  box-sizing: boarder-box;
+
+  
+}
+
+
+
+
+
 
 
 
