@@ -92,12 +92,44 @@ button {
 
 
 
+/* cards slide out to right */
+
+
+.card.slide-out {
+  transform: translateX(120%(;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* new card enters from left */
+
+.card.slide.in {
+  transform: translateX(120%(;
+  opacity: 0;
+}
 
 
 
 
 
-.card h2 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card h2 
+
+
+
+{
   font-size: 24px;
 }
 
