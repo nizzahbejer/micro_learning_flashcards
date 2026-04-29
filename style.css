@@ -9,21 +9,22 @@ body {
 
 /* APP */
 .app {
-  max-width: 560px;
+  max-width: 900px;
   margin: auto;
-  padding: 25px;
+  padding: 40px;
 }
 
 /* TITLE */
 .title {
   text-align: center;
-  font-size: 34px;
+  font-size: 44px;
   font-weight: 800;
   color: #312E81;
 }
 
 .subtitle {
   text-align: center;
+  font-size: 18px;
   color: #4B5563;
   margin-bottom: 20px;
 }
@@ -31,11 +32,19 @@ body {
 /* INPUT SECTION (colored card instead of white) */
 .input-section {
   background: linear-gradient(135deg, #FDE68A, #A7F3D0);
-  padding: 18px;
+  padding: 25px;
   border-radius: 18px;
   box-shadow: 0 12px 25px rgba(0,0,0,0.12);
   margin-bottom: 18px;
+  text-align: center;
+  
 }
+
+
+
+
+
+
 
 .input-section h2 {
   font-size: 18px;
