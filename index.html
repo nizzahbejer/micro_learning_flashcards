@@ -15,7 +15,7 @@
 
   <!-- TITLE -->
   <header class="header">
-    <h1 class="title">📚 Micro-Learning Deck</h1>
+    <h1 class="title">📚 Micro-Learning Deck📚</h1>
     <p class="subtitle">Build your deck before studying</p>
   </header>
 
@@ -33,7 +33,7 @@
       <p class="counter">Cards Added: <span id="cardCount">0</span></p>
     </div>
 
-    <button class="study-btn" onclick="startStudyMode()">🎯 Start Study Mode</button>
+    <button class="study-btn" onclick="startStudyMode()">🎯 Start Study Mode 🎯 </button>
 
   </section>
 
@@ -43,15 +43,21 @@
   <section id="studyMode" class="hidden">
 
 
-
-    <!-- FLASHCARD -->
+ <!-- CARD -->
     <main class="card" onclick="flipCard()">
-      <h2 id="cardTerm">No Cards</h2>
-      <p id="cardDefinition" class="hidden"></p>
-      <small>Tap to reveal</small>
+      <div class="card-inner">
+
+        <div class="card-front">
+          <h2 id="cardTerm">No Cards</h2>
+          <small>Tap to reveal</small>
+        </div>
+
+        <div class="card-back">
+          <p id="cardDefinition"></p>
+        </div>
+
+      </div>
     </main>
-
-
 
     <!-- ACTIONS (ONLY HERE) -->
     <div class="actions">
