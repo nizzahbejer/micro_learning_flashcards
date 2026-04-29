@@ -56,24 +56,18 @@ body {
   
 }
 
-
-
-
-
-
-
-
-
 /* BUTTONS */
 button {
   width: 100%;
-  padding: 14px;
+  padding: 20px;
   border-radius: 12px;
   border: none;
   cursor: pointer;
   font-weight: 700;
-  transition: 0.2s;
+  font-size: 18px;
+  
 }
+
 
 /* STUDY BUTTON (purple pastel) */
 .study-btn {
@@ -88,15 +82,20 @@ button {
 
 /* CARD (colorful pastel instead of white) */
 .card {
-  background: linear-gradient(135deg, #F9A8D4, #93C5FD);
-  padding: 50px 20px;
-  border-radius: 22px;
-  text-align: center;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-  min-height: 180px;
-  margin-top: 20px;
-  color: #111827;
+  margin-top: 30px;
+  height: 380px;
+  perspective: 1000px;
+  
 }
+
+
+
+
+
+
+
+
+
 
 .card h2 {
   font-size: 24px;
