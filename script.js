@@ -5,7 +5,6 @@ let deck = [];
 let currentIndex = 0;
 
 
-
 // =====================
 // ADD CARD
 // =====================
@@ -28,7 +27,6 @@ function addCard() {
 }
 
 
-
 // =====================
 // START STUDY MODE
 // =====================
@@ -41,8 +39,8 @@ function startStudyMode() {
   shuffleDeck();
   currentIndex = 0;
   renderCard();
+  updateStats();
 }
-
 
 
 // =====================
@@ -52,7 +50,6 @@ function backToBuild() {
   document.getElementById("buildMode").classList.remove("hidden");
   document.getElementById("studyMode").classList.add("hidden");
 }
-
 
 
 // =====================
@@ -68,7 +65,6 @@ function resetDeck() {
 }
 
 
-
 // =====================
 // RENDER CARD
 // =====================
@@ -77,19 +73,18 @@ function renderCard() {
 
   document.getElementById("cardTerm").innerText = card.term;
   document.getElementById("cardDefinition").innerText = card.definition;
-  document.getElementById("cardDefinition").classList.add("hidden");
+
+  // reset flip every new card
+  document.querySelector(".card").classList.remove("flipped");
 }
 
 
-
 // =====================
-// FLIP
+// FLIP (FIXED)
 // =====================
 function flipCard() {
-  document.getElementById("cardDefinition").classList.toggle("hidden");
+  document.querySelector(".card").classList.toggle("flipped");
 }
-
-
 
 
 // =====================
@@ -98,28 +93,23 @@ function flipCard() {
 function shuffleDeck() {
   if (deck.length === 0) return;
 
-  // Fisher-Yates shuffle
   for (let i = deck.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [deck[i], deck[j]] = [deck[j], deck[i]];
   }
 
-  // Reset view so user sees new order
   currentIndex = 0;
   renderCard();
 }
 
 
-
-
 // =====================
-// NEXT CARD LOGIC
+// NEXT CARD
 // =====================
 function nextCard() {
   currentIndex = (currentIndex + 1) % deck.length;
   renderCard();
 }
-
 
 
 // =====================
@@ -132,16 +122,12 @@ function markLearned() {
 }
 
 
-
-
 // =====================
 // STILL LEARNING
 // =====================
 function markUnknown() {
   nextCard();
 }
-
-
 
 
 // =====================
