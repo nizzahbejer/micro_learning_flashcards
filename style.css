@@ -1,20 +1,16 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-
-  /* soft gradient background (NOT white-heavy) */
   background: linear-gradient(135deg, #C7D2FE, #FBCFE8, #BAE6FD);
   color: #1F2937;
 }
 
-/* APP */
 .app {
   max-width: 900px;
   margin: auto;
   padding: 40px;
 }
 
-/* TITLE */
 .title {
   text-align: center;
   font-size: 44px;
@@ -29,7 +25,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* INPUT SECTION (colored card instead of white) */
 .input-section {
   background: linear-gradient(135deg, #FDE68A, #A7F3D0);
   padding: 25px;
@@ -37,26 +32,8 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.12);
   margin-bottom: 18px;
   text-align: center;
-  
 }
 
-
-/* INPUTS */
-
-.input {
-  width: 100%
-  padding: 18px;
-  margin: 8px 0;
-  border-radius: 12px;
-  border: none;
-  font-size: 17px;
-  background: #ffffffcc;
-  box-sizing: boarder-box;
-
-  
-}
-
-/* BUTTONS */
 button {
   width: 100%;
   padding: 20px;
@@ -65,11 +42,8 @@ button {
   cursor: pointer;
   font-weight: 700;
   font-size: 18px;
-  
 }
 
-
-/* STUDY BUTTON (purple pastel) */
 .study-btn {
   background: #818CF8;
   color: white;
@@ -80,42 +54,14 @@ button {
   background: #6366F1;
 }
 
-/* CARD (colorful pastel instead of white) */
+/* CARD */
 .card {
   margin-top: 30px;
   height: 380px;
   perspective: 1000px;
-  
+  cursor: pointer;
 }
 
-
-
-
-
-/* cards slide out to right */
-
-
-.card.slide-out {
-  transform: translateX(120%);
-  opacity: 0;
-  transition: all 0.4s ease;
-}
-
-/* new card enters from left */
-
-.card.slide.in {
-  transform: translateX(120%);
-  opacity: 0;
-}
-
-/* card becomes visible again */
-
-.card.show {
-  transform: translateX(0);
-  opacity: 1;
-  transition: all 0.4s ease;
-}
-  
 /* flip system */
 .card-inner {
   width: 100%;
@@ -129,29 +75,32 @@ button {
   transform: rotateY(180deg);
 }
 
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
 
+/* FIXED gradient */
+.card-front {
+  background: linear-gradient(135deg, #F9A8D4, #93C5FD);
+}
 
+.card-back {
+  background: linear-gradient(135deg, #F9A8D4, #93C5FD);
+  transform: rotateY(180deg);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.card h2 
-
-
-
-{
+.card h2 {
   font-size: 24px;
 }
 
@@ -160,12 +109,11 @@ button {
   margin-top: 10px;
 }
 
-/* HIDDEN */
 .hidden {
   display: none;
 }
 
-/* ACTIONS (each button is pastel colored) */
+/* ACTIONS */
 .actions {
   display: flex;
   gap: 10px;
@@ -177,7 +125,6 @@ button {
   font-weight: 700;
 }
 
-/* pastel buttons */
 .green { background: #6EE7B7; }
 .red { background: #FCA5A5; }
 .blue { background: #93C5FD; }
@@ -186,7 +133,7 @@ button {
 .red:hover { background: #EF4444; }
 .blue:hover { background: #3B82F6; }
 
-/* EXTRA BUTTONS */
+/* EXTRA */
 .extra-actions {
   margin-top: 10px;
   display: flex;
@@ -199,7 +146,7 @@ button {
   color: #1F2937;
 }
 
-/* STATS (colored bar style instead of white) */
+/* STATS */
 .stats {
   margin-top: 20px;
   background: linear-gradient(135deg, #A5B4FC, #F0ABFC);
